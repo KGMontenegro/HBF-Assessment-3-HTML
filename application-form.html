@@ -1,13 +1,15 @@
 <!doctype <html>
 <head>
-    <title>base.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1> Application Form </h1>    
-<h3> Complete each field of the following application. When you are done, click submit </h3>    
+<h1> Application Form </h1>       
 <form action='/application-success' method='POST'>
     First name: <input type='text' name = 'firstname'><br>
-    Last name:  <input type='text' name = 'lastname'><br>
+    Last name:  <b><input type='text' name = 'lastname'></b><br>
     Salary:     <input type='number' name = 'salary'><br>
     Job applying: 
       <select job = 'jobapplying'> 
@@ -16,7 +18,9 @@
         <option value = 'Product Manager'>ProductManager</option>
        </select> <br>  
     <br>   
-    <input type='submit' value = 'Submit'>
+    <input type='submit' class='button'value = 'Submit' id='st'><br>
+    <br>
+    <p> Complete each field of the following application. Read your answers to make sure they are ok. When you are done, click submit.  </p> 
 </form>    
 </body>
 </html>
